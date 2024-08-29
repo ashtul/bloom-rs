@@ -119,7 +119,7 @@ pub use counting::CountingBloomFilter;
 pub mod valuevec;
 pub use valuevec::ValueVec;
 
-/// Stanard filter functions
+/// Standard filter functions for Approximate Set Membership Structures (ASMS).
 pub trait ASMS {
     fn insert<T: Hash>(& mut self,item: &T) -> bool;
     fn contains<T: Hash>(&self, item: &T) -> bool;
